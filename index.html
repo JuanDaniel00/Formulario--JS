@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <section class="mainSection">
+        <div class="mainDiv">
+            <div class="divForm">
+                <div class="form">
+                    <div class="divForm1 formsDiv">
+                        <div class="divName divInput">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name"">
+                        </div>
+                        <div class=" divLastName divInput" >
+                            <label for="lastName">Apellido</label>
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+                    <div class="divForm12 formsDiv">
+                        <div class="divGender">
+                            <label for="gender">Masculino</label>
+                            <input type="radio" name="gender" id="genderM">
+                            <label for="gender">Femenino</label>
+                            <input type="radio" name="gender" id="genderF">
+                        </div>
+                    </div>
+                    <div class="divForm2 formsDiv">
+                        <div class="divNumber divInput">
+                            <label for="number">Numero de Telefono</label>
+                            <input type="text" id="number">
+                        </div>
+                        <div class="divBirthdate divInput">
+                            <label for="birthdate">Fecha de Nacimiento</label>
+                            <input type="date" id="birthdate">
+                        </div>
+                    </div>
+                    <div class="divForm3 formsDiv">
+                        <div class="divDocumentNumber divInput">
+                            <label for="documentNumber">Numero de Documento</label>
+                            <input type="text" id="documentNumber">
+                        </div>
+                        <div class="divDocumentType divInput">
+                            <label for="documentType">Tipo</label>
+                            <select name="documentType" id="documentType">
+                                <option value="Cedula">Cedula</option>
+                                <option value="T.I">T.I</option>
+                                <option value="C.E">Certificados excepcionales</option>
+                                <option value="P.N">Pasaporte nacional</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="divForm4 formsDiv">
+                        <div class="divEmail divInput">
+                            <label for="email">Correo Electronico</label>
+                            <input type="email" id="email">
+                        </div>
+                    </div>
+                    <div class="divSend">
+                        <button onclick="enviar()">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contDivDatos">
+            <div id="divDatos">
+
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
